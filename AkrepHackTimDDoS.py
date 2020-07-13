@@ -10,7 +10,7 @@ banner="""
 """
 print (banner)
 target = input("hedef ip: ")
-target = input("hedef port: ")
+port = 80
 
 attack_num = 0
 def attack():
