@@ -2,11 +2,11 @@ import socket
 import threading
 import os
 
+os.system("clear")
 print("#########################")
 print("#Akrep Hack Tim DDoS")
 print("#Code By Bunny Sayne")
 print("#########################")
-os.system("clear")
 target = input("hedef ip: ")
 port = 80
 
