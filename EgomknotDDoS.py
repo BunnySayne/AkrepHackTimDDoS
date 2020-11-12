@@ -4,7 +4,7 @@ import os
 
 os.system("clear")
 print("#########################")
-print("#Akrep Hack Tim DDoS")
+print("#Egomknot DDoS")
 print("#Code By Egomknot")
 print("#########################")
 target = input("hedef ip: ")
